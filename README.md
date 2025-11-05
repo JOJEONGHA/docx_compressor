@@ -46,7 +46,7 @@
 
 - Rust 1.75 或更高版本  
 - `libfontconfig`（Linux）  
-- C 编译工具链（如 `build-essential` 或 `mingw`）
+- C 编译工具链（如 `mingw`）
 
 ### 构建命令
 
@@ -57,4 +57,6 @@ cd docx-compressor
 
 # 构建可执行文件
 cargo build --release
+cargo build --release --target x86_64-unknown-linux-gnu
+cargo build --release --target x86_64-pc-windows-gnu
 
