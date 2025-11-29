@@ -33,7 +33,7 @@ public class BooksDAO {
 		}
 	}
 
-	// (info_UD - 책 번호 검색)
+	// (info_UD - 책 번호 검색)/ *번호검색
 	public JoinTable bookInfo(String num) {
 		JoinTable info = new JoinTable();
 
@@ -169,7 +169,7 @@ public class BooksDAO {
 		return num;
 	}
 
-	// (enroll_C - 같은 이름,생일 가진 작가 유무 판단 후 없으면 db에 추가)
+	// (enroll_C - 같은 이름,생일 가진 작가 유무 판단 후 없으면 db에 추가) *작가생성
 	public boolean checkAuthor(Authors a) {
 		String temp_name = a.getAuthorname();
 		String temp_birth = a.getBirthyear();
@@ -207,7 +207,7 @@ public class BooksDAO {
 		return true;
 	}
 
-	// 도서정보 수정
+	// 도서정보 수정 *도서갱신
 	public void UpdateBooks(Books b){
 		// Books(num,pub,sum) DB에 업데이트
 		// 해당 책(num)을 찾아서, 변경(pub,sum)
@@ -228,7 +228,7 @@ public class BooksDAO {
 		}
 	}
 
-	// 도서 삭제
+	// *도서삭제
 	public void deleteBooks(JoinTable j) {
 		try {
 			con = dataFactory.getConnection();
@@ -255,7 +255,7 @@ public class BooksDAO {
 		}
 
 	}
-
+	// *도서추가
 	public void createBooks(Books b, List<Pieces> l) {
 		try {
 			con = dataFactory.getConnection();

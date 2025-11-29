@@ -34,45 +34,9 @@
 </script>
 </head>
 <body>
-	<%-- <form action="/bookmanager/controller/Create_Book.do" method="post">
-	<table>
-		<tr>
-			<td>도서번호 : ${booknum} <input type="hidden" name="booknum"
-				value="${booknum}"></td>
-		</tr>
-		<tr>
-			<!-- Author -->
-			<td>
-				<table id="author">
-					<tr>
-						<td>저 자 :<input type="text" name="authorbox"
-							style="width: 150px; height: 20px;"></td>
-						<td><input type="button" id="checkBtn" onclick="checkbtn()"
-							value="check"></td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td>출 판 사 : <input type="text" name="Bpub_info"></td>
-		</tr>
-		<tr>
-			<td>상세 설명 : <input type="text" name="Binf_info"></td>
-		</tr>
-	</table>
-	<table>
-		<tr>
-			<td><input type="button" onclick="" value="도서 추가"></td>
-			<td><input type="button" onclick="" value="작가 추가"><
-		<tr>
-			<td><input type="button" name="btn_Back" value="back"></td>
-		</tr>
-	</table>
-</form> --%>
-
 	<form action="/bookmanager/controller/Create_Book.do" method="post">
 		도서 번호 : ${booknum} <input type="hidden" name="Bnum_info"
-			value="${booknum}"><br> 제 목 : <input type="text"
+			value="${booknum}"><br><br> 제 목 : <input type="text"
 			name="Bname_info"><br> <br>
 		<table id="author">
 			<tr>
@@ -81,6 +45,7 @@
 				<td><input type="button" id="checkBtn" onclick="checkbtn()"
 					value="+"></td>
 			</tr>
+			<td><font color="#FF0000">*</font> 이름/생년월일 ex) 홍길동/19900508 </td>
 		</table>
 
 		<br> 출 판 사 : <input type="text" name="Bpub_info"><br>

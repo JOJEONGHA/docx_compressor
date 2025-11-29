@@ -113,7 +113,7 @@ public class MainController extends HttpServlet {
 			request.setAttribute("booksList", booksList);
 			nextPage = "/main_LS.jsp";
 		}
-		// (info - book information update & delete)
+		// (info - book information update & delete) **정보갱신
 		else if (action.equals("/update.do")) {
 			String temp_num = request.getParameter("bookinfo"); // bookinfo 속 number만 존재
 			JoinTable temp = dao.bookInfo(temp_num);
@@ -133,15 +133,11 @@ public class MainController extends HttpServlet {
 				nextPage = "/main_LS.jsp";
 			}
 		}
-		// (enroll - Author enroll)
-		else if (action.equals("/Enroll.do")) {
-
-		}
 		// (all page - back to main(list))
 		else if (action.equals("/Back.do") || action == "") {
 			nextPage = "/main_LS.jsp";
 		}
-		// (createA_C - Add author)
+		// (createA_C - Add author) **작가생성
 		else if (action.equals("/CreateAuthor.do")) {
 			String visit = request.getParameter("btn_createA");
 			String booknum = request.getParameter("booknum");
@@ -154,7 +150,7 @@ public class MainController extends HttpServlet {
 				Authors temp = new Authors(name, birthyear);
 				boolean exi = dao.checkAuthor(temp); // Add author or Exist Yes,No
 				request.setAttribute("exist", exi);
-				nextPage = "/enroll_C.jsp";
+				nextPage = "/main_LS.jsp";
 			}
 		}
 		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
